@@ -62,26 +62,27 @@ class App extends React.Component {
   }
 };
 
+
   render () {
     return(
       <div className="wrapper">
         <div className="main">
-            <div className="contaier">
-              <div className="row"> 
-                <div className="col-sm-5 info">
-                  <Info />
-                </div>
-                <div classname="col-sm-7" >
-                  <Dictaphone weatherMethod={this.getWeather}/>                  
-                  <Weather
-                    temp={this.state.temp}
-                    city={this.state.city}
-                    country={this.state.country}
-                    pressure={this.state.pressure}
-                    sunrise={this.state.sunrise}
-                    sunset={this.state.sunset}
-                    error={this.state.error}
-                  />                  
+          <div className="contaier">
+            <div className="row"> 
+              <div className="col-sm-5 info">
+                <Info />
+              </div>
+              <div className="col-sm-7 dictaphone">
+                <Weather
+                  temp={this.state.temp}
+                  city={this.state.city}
+                  country={this.state.country}
+                  pressure={this.state.pressure}
+                  sunrise={this.state.sunrise}
+                  sunset={this.state.sunset}
+                  error={this.state.error}
+                  />
+                {/* <Dictaphone weatherMethod={this.getWeather}/> */}
               </div>
             </div>
           </div>
