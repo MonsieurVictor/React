@@ -19,14 +19,14 @@ class Dictaphone extends Component {
             <br></br>
             <form onSubmit={this.props.weatherMethod} className = "dictaphone">
 
-                <input type="text" name="city" defaultValue={transcript} placeholder="Город"/>
-                <button Clicker></button>   
+                <input type="text" name="city" defaultValue={finalTranscript} placeholder="Город"/>
+                <button id = "Clicker"></button>   
 
-                {interimTranscript === "OK Google" && document.getElementById('Clicker').click()}
+                {interimTranscript === "okay" && document.getElementById('Clicker').click()}
             </form>          
             {interimTranscript === "hello" && resetTranscript()}
             <br></br>
-                
+            <p className = "hello">Произнесите название города, затем скажите "ОК"</p>     
             <p className = "hello">Скажите "Hello!" для очистки строки поиска</p>        
             
         </div>

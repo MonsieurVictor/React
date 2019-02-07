@@ -47,7 +47,15 @@ class App extends React.Component {
         });
       } 
       catch (e) {
-        alert("Город не найден!")
+        this.setState ({
+          temp: undefined,
+          city: undefined,
+          country: undefined,
+          pressure: undefined,
+          sunrise: undefined,
+          sunset: undefined,
+          error: "Город не найден"
+        })
       }
     } else {
       this.setState ({
