@@ -1,5 +1,3 @@
-A simple React app, which shows weather by wrighting/saying the city
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
