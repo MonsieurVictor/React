@@ -1,5 +1,7 @@
-A simple React app, which shows weather by wrighting/saying the city
+A simple React app, which shows weather by writing/saying the city
+A video demo in Youtube - https://youtu.be/pJ919Dt9XUk
 
+----------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

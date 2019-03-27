@@ -32,7 +32,7 @@ class Dictaphone extends Component {
                 <input type="text" name="city" defaultValue={finalTranscript} placeholder="Город" ref={this.input}/>
                 <button id = "Clicker"></button>   
 
-                {interimTranscript === "okay" && document.getElementById('Clicker').click()}
+                {interimTranscript === "ok" && document.getElementById('Clicker').click()}
             </form>          
             {interimTranscript === "hello" && resetTranscript()}
             <br></br>
