@@ -1,12 +1,11 @@
-import React from 'react' // мы обязаны импортировать необходимые пакеты в каждом файле
-import PropTypes from 'prop-types' // у Article это react и prop-types
-
-// далее просто скопировано все что было, кроме последней строки
+import React from 'react'
+import PropTypes from 'prop-types'
 
 class Article extends React.Component {
   state = {
     visible: false,
   }
+  
   handleReadMoreClck = e => {
     e.preventDefault()
     this.setState({ visible: true })
@@ -42,4 +41,4 @@ Article.propTypes = {
   }),
 }
 
-export { Article } // именованный экспорт
+export { Article }
